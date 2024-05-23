@@ -1,0 +1,15 @@
+{
+  "name": "appodile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Dylan Languet",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.4"
+  }
+}

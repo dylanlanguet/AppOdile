@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/fr-FR/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="styles.css">
+  <title>GVL</title>
+</head>
+
+<body>
+  <div id="taskbar">
+    <label class="switch">
+      <input id="darkModeSwitch" type="checkbox">
+      <span class="slider"></span>
+      <span class="moon-icon">☽</span>
+    </label>
+  </div>
+  <div id="menu">
+    <button id="assMat" class="button">ASS MAT</button>
+    <div id="assMatSubMenu" class="submenu">
+      <button>Planning</button>
+      <button>CP</button>
+      <button>Impots</button>
+      <button>Contrat</button>
+      <button>Bulletin</button>
+    </div>
+    <button id="potagerAnimaux">POTAGER/ANIMAUX</button>
+    <div id="potagerAnimauxSubMenu" class="submenu">
+      <button>Stock</button>
+      <button>Fournitures</button>
+    </div>
+    <button id="maisonHote">MAISON HOTE</button>
+    <div id="maisonHoteSubMenu" class="submenu">
+      <button>Disponibilités</button>
+      <button>Réservations</button>
+      <button>Besoins particuliers</button>
+    </div>
+    <button id="gestionStock">GESTION STOCK</button>
+    <div id="gestionStockSubMenu" class="submenu">
+      <button>Chambre Hote</button>
+      <button>Table Hote</button>
+    </div>
+    <button id="tableHote">TABLE HOTE</button>
+    <div id="tableHoteSubMenu" class="submenu">
+      <button>Disponibilités</button>
+      <button>Réservations</button>
+      <button>Régimes particuliers</button>
+    </div>
+    <button id="banque">BANQUE</button>
+    <div id="banqueSubMenu" class="submenu">
+      <button>Ass Mat</button>
+      <button>Maison Hote</button>
+      <button>Table Hote</button>
+      <button>évènementiel</button>
+      <button>Bulletin</button>
+    </div>
+    <button id="evenementiel">EVENEMENTIEL</button>
+    <div id="evenementielSubMenu" class="submenu">
+      <button>Disponibilités</button>
+      <button>Réservations</button>
+      <button>Règlementations</button>
+    </div>
+    <button id="impots">IMPOTS</button>
+    <div id="impotsSubMenu" class="submenu">
+      <button>Taxe Foncière</button>
+      <button>Impot sur le revenus</button>
+    </div>
+    <button id="facture">FACTURE</button>
+    <div id="factureSubMenu" class="submenu">
+      <button>Taxe Foncière</button>
+      <button>Impot sur le revenus</button>
+    </div>
+  </div>
+
+  <!-- Vous pouvez également demander que d’autres fichiers s’exécutent dans ce processus -->
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
