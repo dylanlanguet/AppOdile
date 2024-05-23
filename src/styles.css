@@ -1,26 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Styles par défaut */
 body {
   background-color: #ffffff; /* Fond blanc */
   color: #000000; /* Texte noir */
 }
 
-#taskbar {
-  position: fixed; /* La barre restera fixe en haut de la page */
-  top: 0; /* La barre sera positionnée en haut */
-  left: 0; /* La barre sera alignée à gauche */
-  width: 100%; /* La barre s'étendra sur toute la largeur de la fenêtre */
-  background-color: #333; /* Couleur de fond de la barre */
-  color: #fff; /* Couleur du texte dans la barre */
-  padding: 20px; /* Espacement interne de la barre */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre sous la barre */
-  z-index: -1; /* Assurez-vous que la barre est au-dessus des autres éléments */
-}
-
 /* Styles par défaut du switch */
 .switch {
   position: relative;
-  top: 20px;
-  right: 20px;
   display: inline-block;
   width: 60px;
   height: 34px;
@@ -108,7 +98,6 @@ input:checked + .slider ~ .moon-icon::before {
 
 
 #menu {
-  top: 22px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2vw;
